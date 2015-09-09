@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc" defaultGlanceController="0uZ-2p-rRc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pomodoro_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="59" alignment="left" text="You have no tasks! What about create a new one?" textAlignment="center" numberOfLines="0" id="xcP-eP-fcZ">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <imageView width="30" height="30" alignment="center" image="tomato" animationDuration="2" id="0jV-uK-vgh">
+                            <color key="tintColor" red="0.99215686274509807" green="0.37254901960784315" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <table alignment="center" id="uIM-1g-PTb">
+                            <items>
+                                <tableRow identifier="TaskRowType" id="nUb-29-iJo" customClass="TaskRowType" customModule="Pomodoro_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Ahr-tE-Sez">
+                                        <items>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="DyQ-MQ-rOS"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.99215686274509807" green="0.37254901960784315" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowDescription" destination="DyQ-MQ-rOS" id="SXl-4e-ftC"/>
+                                        <segue destination="W45-Og-Fth" kind="push" identifier="TaskDetailsSegue" id="NEw-Ef-Caw"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="New Task" id="wBc-la-0nH">
+                            <connections>
+                                <action selector="enterActivityNameButtonTapped" destination="AgC-eL-Hgc" id="ztI-RB-Q5D"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imgTomato" destination="0jV-uK-vgh" id="hEJ-6X-Woc"/>
+                        <outlet property="lblNoTasks" destination="xcP-eP-fcZ" id="2Bq-Z2-fQ4"/>
+                        <outlet property="table" destination="uIM-1g-PTb" id="0NY-Yu-4di"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Task Controller-->
+        <scene sceneID="Svj-Wv-BPl">
+            <objects>
+                <controller animationDuration="1" hidesWhenLoading="NO" id="W45-Og-Fth" customClass="TaskController" customModule="Pomodoro_WatchKit_Extension">
+                    <items>
+                        <group width="136" height="136" alignment="center" verticalAlignment="center" backgroundImage="circles_background" layout="vertical" id="Cm3-iR-x7h" userLabel="TimerRing">
+                            <items>
+                                <label height="36" alignment="center" text="00:00" textAlignment="center" id="gBs-TG-xV8" userLabel="timeLabel">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="36"/>
+                                </label>
+                                <label width="90" height="18" alignment="center" verticalAlignment="bottom" textAlignment="center" minimumScaleFactor="0.5" id="Rpe-cS-Juv">
+                                    <color key="textColor" red="0.99215686274509807" green="0.37254901960784315" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="50" bottom="50"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lblTaskName" destination="Rpe-cS-Juv" id="TXf-Gb-gU5"/>
+                        <outlet property="lblTimer" destination="gBs-TG-xV8" id="RGQ-jI-Dbw"/>
+                        <outlet property="timerRingInterfaceGroup" destination="Cm3-iR-x7h" id="QrL-v6-a9W"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="499" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Pomodoro_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Pomodoro_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>
