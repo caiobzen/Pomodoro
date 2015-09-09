@@ -20,7 +20,9 @@ class InterfaceController: WKInterfaceController {
     //MARK: - WKInterfaceController lifecycle
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        // Configure interface objects here.
+        //This will animate our tomato. Let's make that pretty!
+        self.imgTomato.setImageNamed("tomato")
+        self.imgTomato.startAnimatingWithImagesInRange(NSMakeRange(0, 10), duration: 1, repeatCount: 0)
     }
 
     override func willActivate() {

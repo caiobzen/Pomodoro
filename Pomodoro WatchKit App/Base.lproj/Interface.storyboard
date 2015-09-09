@@ -13,7 +13,7 @@
                         <label width="1" height="59" alignment="left" text="You have no tasks! What about create a new one?" textAlignment="center" numberOfLines="0" id="xcP-eP-fcZ">
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </label>
-                        <imageView width="30" height="30" alignment="center" image="tomato" animationDuration="2" id="0jV-uK-vgh">
+                        <imageView width="30" height="30" alignment="center" image="tomato1" animationDuration="1" id="0jV-uK-vgh">
                             <color key="tintColor" red="0.99215686274509807" green="0.37254901960784315" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
                         <table alignment="center" id="uIM-1g-PTb">

@@ -12,8 +12,8 @@ import Foundation
 class TaskController: WKInterfaceController {
 
      //MARK: - Vars and properties
-    let defaultPomodoroTimeInMinutes = 1 //Default is 25
-    let defaultBreakTimeInMinutes = 1 //Default is 5
+    let defaultPomodoroTimeInMinutes = 25 //Default is 25
+    let defaultBreakTimeInMinutes = 5 //Default is 5
     var currentTask:TaskModel?
     var bgImageString:String?
     var taskTimer:NSTimer?

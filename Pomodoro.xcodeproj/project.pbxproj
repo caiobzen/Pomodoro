@@ -14,6 +14,7 @@
 		BA39DA561B9F86FB005D7727 /* CCCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39DA4F1B9F86D3005D7727 /* CCCoreDataStack.swift */; };
 		BA39DA5A1B9F8843005D7727 /* Pomodoro.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = BA39DA591B9F8843005D7727 /* Pomodoro.xcdatamodel */; };
 		BA39DA5B1B9F8843005D7727 /* Pomodoro.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = BA39DA591B9F8843005D7727 /* Pomodoro.xcdatamodel */; };
+		BA48522C1BA07C8D001E342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7454AB1B9F85C100218BB5 /* Assets.xcassets */; };
 		BA7454951B9F85C100218BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7454941B9F85C100218BB5 /* AppDelegate.swift */; };
 		BA7454971B9F85C100218BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7454961B9F85C100218BB5 /* ViewController.swift */; };
 		BA74549A1B9F85C100218BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7454981B9F85C100218BB5 /* Main.storyboard */; };
@@ -337,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA48522C1BA07C8D001E342C /* Assets.xcassets in Resources */,
 				BA7454C21B9F85C100218BB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
