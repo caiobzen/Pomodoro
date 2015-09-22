@@ -14,7 +14,8 @@
 		BA39DA561B9F86FB005D7727 /* CCCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39DA4F1B9F86D3005D7727 /* CCCoreDataStack.swift */; };
 		BA39DA5A1B9F8843005D7727 /* Pomodoro.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = BA39DA591B9F8843005D7727 /* Pomodoro.xcdatamodel */; };
 		BA39DA5B1B9F8843005D7727 /* Pomodoro.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = BA39DA591B9F8843005D7727 /* Pomodoro.xcdatamodel */; };
-		BA48522C1BA07C8D001E342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7454AB1B9F85C100218BB5 /* Assets.xcassets */; };
+		BA7287301BA3760200E3F266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7454AB1B9F85C100218BB5 /* Assets.xcassets */; };
+		BA7287311BA3779700E3F266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7454AB1B9F85C100218BB5 /* Assets.xcassets */; };
 		BA7454951B9F85C100218BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7454941B9F85C100218BB5 /* AppDelegate.swift */; };
 		BA7454971B9F85C100218BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7454961B9F85C100218BB5 /* ViewController.swift */; };
 		BA74549A1B9F85C100218BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7454981B9F85C100218BB5 /* Main.storyboard */; };
@@ -22,7 +23,6 @@
 		BA74549F1B9F85C100218BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA74549D1B9F85C100218BB5 /* LaunchScreen.storyboard */; };
 		BA7454A41B9F85C100218BB5 /* Pomodoro WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA7454A31B9F85C100218BB5 /* Pomodoro WatchKit App.app */; };
 		BA7454AA1B9F85C100218BB5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7454A81B9F85C100218BB5 /* Interface.storyboard */; };
-		BA7454AC1B9F85C100218BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7454AB1B9F85C100218BB5 /* Assets.xcassets */; };
 		BA7454B31B9F85C100218BB5 /* Pomodoro WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA7454B21B9F85C100218BB5 /* Pomodoro WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BA7454BA1B9F85C100218BB5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7454B91B9F85C100218BB5 /* InterfaceController.swift */; };
 		BA7454BC1B9F85C100218BB5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7454BB1B9F85C100218BB5 /* ExtensionDelegate.swift */; };
@@ -262,6 +262,7 @@
 		BA7454891B9F85C100218BB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Carlos Corrêa";
 				TargetAttributes = {
@@ -329,7 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA7454AC1B9F85C100218BB5 /* Assets.xcassets in Resources */,
+				BA7287301BA3760200E3F266 /* Assets.xcassets in Resources */,
 				BA7454AA1B9F85C100218BB5 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA48522C1BA07C8D001E342C /* Assets.xcassets in Resources */,
+				BA7287311BA3779700E3F266 /* Assets.xcassets in Resources */,
 				BA7454C21B9F85C100218BB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

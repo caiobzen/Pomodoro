@@ -20,15 +20,16 @@ class InterfaceController: WKInterfaceController {
     //MARK: - WKInterfaceController lifecycle
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        //This will animate our tomato. Let's make that pretty!
-        self.imgTomato.setImageNamed("tomato")
-        self.imgTomato.startAnimatingWithImagesInRange(NSMakeRange(0, 10), duration: 1, repeatCount: 0)
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         self.setupTable()
+        
+        //This will animate our tomato. Let's make that pretty dude!
+        self.imgTomato.setImageNamed("tomato")
+        self.imgTomato.startAnimatingWithImagesInRange(NSMakeRange(1, 10), duration: 0.8, repeatCount: 0)
     }
     
     override func didDeactivate() {
@@ -79,10 +80,12 @@ class InterfaceController: WKInterfaceController {
             "Run",
             "Walk with my dog",
             "Work"], allowedInputMode: WKTextInputMode.Plain, completion:{(selectedAnswers) -> Void  in
-                if let taskName = selectedAnswers.first as? String {
-                    CCCoreDataStack.sharedInstance.createTask(taskName)
-                    CCCoreDataStack.sharedInstance.saveContext()
-                    self.setupTable()
+                if selectedAnswers != nil {
+                    if let taskName = selectedAnswers!.first as? String {
+                        CCCoreDataStack.sharedInstance.createTask(taskName)
+                        CCCoreDataStack.sharedInstance.saveContext()
+                        self.setupTable()
+                    }
                 }
         })
     }
