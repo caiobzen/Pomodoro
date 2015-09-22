@@ -39,6 +39,13 @@ class TaskController: WKInterfaceController {
         self.updateInterfaceMenu()
     }
     
+    
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+        self.stopTask()
+    }
+    
     //MARK: - Timer methods
     func startTaskTimer () {
         self.invalidateTimers()
